@@ -1,0 +1,216 @@
+/* Variables de color */
+:root {
+    --primary: #8B4513;        /* Café saddle brown */
+    --primary-dark: #5C2E0E;   /* Café oscuro */
+    --primary-light: #A0522D;  /* Café sienna */
+    --secondary: #D2691E;      /* Café chocolate */
+    --accent: #CD853F;         /* Café peru */
+    --background: #FDF5E6;     /* Crema old lace */
+    --text-dark: #3E2723;      /* Café muy oscuro */
+    --text-light: #8D6E63;     /* Café claro */
+    --border-color: #DEB887;   /* Café burlywood */
+}
+
+/* Sobreescribir clases de Bootstrap */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* Navbar personalizado */
+.navbar-dark {
+    background-color: var(--primary-dark) !important;
+}
+
+.navbar-dark .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--background);
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.header, .top-bar, .main-header {
+    background-color: var(--background) !important;
+}
+
+.top-bar, .header {
+    margin-top: 0 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* Tarjetas de productos */
+.product-card {
+    border-color: var(--border-color);
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
+}
+
+.product-card .card-title {
+    color: var(--text-dark);
+}
+
+/* Badges y etiquetas */
+.badge.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+/* Carrusel */
+.hero-slide {
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(253, 245, 230, 0.9) !important;
+}
+
+/* Sección de categorías */
+.category-card {
+    border-color: var(--border-color);
+}
+
+.category-card:hover {
+    border-color: var(--primary);
+}
+
+/* Ofertas especiales */
+.discount-badge {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 0.25rem;
+}
+
+/* Reseñas */
+.review-card {
+    border-color: var(--border-color);
+}
+
+.stars .fas.fa-star {
+    color: var(--accent);
+}
+
+/* Newsletter */
+.newsletter-section {
+    background-color: var(--primary) !important;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-dark) !important;
+}
+
+.footer a:hover {
+    color: var(--accent) !important;
+}
+
+/* Scroll to top */
+.scroll-to-top {
+    background-color: var(--primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Toast notifications */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.toast {
+    background-color: white;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.toast-success {
+    border-left-color: var(--primary);
+}
+
+.toast-error {
+    border-left-color: #dc3545;
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(139, 69, 19, 0.25);
+}
+
+/* Enlaces */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Paginación */
+.pagination .page-link {
+    color: var(--primary);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary);
+    border-color: var(--primary);
+} 

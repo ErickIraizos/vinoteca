@@ -1,0 +1,215 @@
+/* Variables globales */
+:root {
+    --sidebar-width: 250px;
+    --sidebar-bg: #1a1a1a;
+    --primary-color: #8B4513;
+    --text-light: #ffffff;
+    --text-muted: #888;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Layout principal */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    width: 250px;
+    background-color: #212529;
+    padding: 1rem;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.admin-sidebar .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-sidebar .nav-link i {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+/* Contenido principal */
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 250px; /* Mismo ancho que el sidebar */
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Encabezados */
+.h3 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+/* Tarjetas */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Tablas */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 1rem;
+}
+
+.table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    color: #444;
+}
+
+/* Botones */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #6c3f20;
+    border-color: #6c3f20;
+}
+
+.btn-primary:hover {
+    background-color: #5a341b;
+    border-color: #5a341b;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 0.75em;
+}
+
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+/* Imágenes */
+.img-thumbnail {
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Utilidades */
+.container-fluid {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 60px;
+    }
+    
+    .admin-sidebar .nav-link span {
+        display: none;
+    }
+    
+    .admin-content {
+        margin-left: 60px;
+    }
+    
+    .admin-sidebar .nav-link i {
+        margin-right: 0;
+        font-size: 1.25rem;
+    }
+}
+
+/* Alerts */
+.alert {
+    margin-bottom: 1.5rem;
+}
+
+/* Navegación superior */
+.top-nav {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+} 

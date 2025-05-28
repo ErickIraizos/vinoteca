@@ -1,0 +1,46 @@
+RewriteEngine On
+RewriteBase /vino/
+
+# Redirigir URLs en plural a singular
+RewriteRule ^productos/(.*)$ producto/$1 [R=301,L]
+RewriteRule ^categorias/(.*)$ categoria/$1 [R=301,L]
+RewriteRule ^usuarios/(.*)$ usuario/$1 [R=301,L]
+
+# Reglas para pedidos
+RewriteRule ^pedidos/detalle/([0-9]+)$ index.php?url=pedidos/detalle/$1 [QSA,L]
+RewriteRule ^pedidos/cancelar/([0-9]+)$ index.php?url=pedidos/cancelar/$1 [QSA,L]
+
+# Redirigir rutas específicas de productos
+RewriteRule ^productos$ producto [R=301,L]
+RewriteRule ^productos/detalle/(.*)$ producto/detalle/$1 [R=301,L]
+RewriteRule ^productos/novedades$ producto/novedades [R=301,L]
+RewriteRule ^productos/ofertas$ producto/ofertas [R=301,L]
+RewriteRule ^productos/categoria/(.*)$ producto/categoria/$1 [R=301,L]
+RewriteRule ^productos/buscar$ producto/buscar [R=301,L]
+
+# Redirigir rutas específicas de categorías
+RewriteRule ^categorias$ categoria [R=301,L]
+RewriteRule ^categorias/ver/(.*)$ categoria/ver/$1 [R=301,L]
+
+# Si el archivo o directorio no existe, redirige a index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Prevenir acceso a archivos .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevenir acceso a archivos .php en la carpeta views
+<FilesMatch "^.*\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Permitir acceso a index.php
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files> 

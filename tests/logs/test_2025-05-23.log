@@ -1,0 +1,75 @@
+[2025-05-23 14:59:54] Error al conectar a la base de datos de prueba: SQLSTATE[HY000] [1049] Unknown database 'vino_test'
+[2025-05-23 15:05:00] Conexión a base de datos de prueba establecida
+[2025-05-23 15:05:00] === Iniciando suite de pruebas ===
+[2025-05-23 15:05:00] 
+=== Ejecutando pruebas de base de datos ===
+[2025-05-23 15:05:00] Iniciando pruebas de base de datos
+[2025-05-23 15:35:23] Conexión a base de datos de prueba establecida
+[2025-05-23 15:35:23] === Iniciando suite de pruebas ===
+[2025-05-23 15:35:23] 
+=== Ejecutando pruebas de base de datos ===
+[2025-05-23 15:35:23] Iniciando pruebas de base de datos
+[2025-05-23 15:35:23] Conexión a base de datos exitosa
+[2025-05-23 15:35:23] Query productos: 2 registros en 0.0020139217376709 segundos
+[2025-05-23 15:35:23] Query pedidos: 9 registros en 0.0015740394592285 segundos
+[2025-05-23 15:35:23] Query resenas: 3 registros en 0.0013811588287354 segundos
+[2025-05-23 15:35:23] Transacción completada exitosamente
+[2025-05-23 15:35:23] 
+=== Ejecutando pruebas de seguridad ===
+[2025-05-23 15:35:23] Iniciando pruebas de seguridad
+[2025-05-23 15:35:23] Vulnerabilidad SQL encontrada en login: ' OR '1'='1
+[2025-05-23 15:35:23] Vulnerabilidad SQL encontrada en login: '; DROP TABLE usuarios; --
+[2025-05-23 15:35:23] Vulnerabilidad SQL encontrada en login: ' UNION SELECT * FROM usuarios; --
+[2025-05-23 15:35:23] Vulnerabilidad SQL encontrada en busqueda: ' OR '1'='1
+[2025-05-23 15:35:23] Vulnerabilidad SQL encontrada en busqueda: '; DROP TABLE productos; --
+[2025-05-23 15:35:23] Vulnerabilidad SQL encontrada en busqueda: ' UNION SELECT * FROM productos; --
+[2025-05-23 15:35:23] Prueba XSS segura en comentario: <script>alert('XSS')</script>
+[2025-05-23 15:35:23] Prueba XSS segura en comentario: <img src='x' onerror='alert(1)'>
+[2025-05-23 15:35:23] Posible vulnerabilidad XSS en comentario: javascript:alert(1)
+[2025-05-23 15:35:23] Prueba XSS segura en nombre: <script>alert('XSS')</script>
+[2025-05-23 15:35:23] Prueba XSS segura en nombre: <img src='x' onerror='alert(1)'>
+[2025-05-23 15:35:23] Posible vulnerabilidad XSS en nombre: javascript:alert(1)
+[2025-05-23 15:35:23] Configuración de sesión insegura: session.cookie_httponly =  (debería ser 1)
+[2025-05-23 15:35:23] Configuración de sesión segura: session.use_only_cookies
+[2025-05-23 15:35:23] Configuración de sesión insegura: session.cookie_secure = 0 (debería ser 1)
+[2025-05-23 15:35:23] Reporte generado en: C:\xampp\htdocs\vino\tests/logs/report_2025-05-23_15-35-23.txt
+[2025-05-23 15:35:23] === Suite de pruebas completada ===
+[2025-05-23 15:37:19] Conexión a base de datos de prueba establecida
+[2025-05-23 15:37:19] === Iniciando suite de pruebas ===
+[2025-05-23 15:37:19] 
+=== Ejecutando pruebas de base de datos ===
+[2025-05-23 15:37:19] Iniciando pruebas de base de datos
+[2025-05-23 15:37:19] Conexión a base de datos exitosa
+[2025-05-23 15:37:19] Query productos: 2 registros en 0.0034229755401611 segundos
+[2025-05-23 15:37:19] Query pedidos: 9 registros en 0.0026779174804688 segundos
+[2025-05-23 15:37:19] Query resenas: 3 registros en 0.0024220943450928 segundos
+[2025-05-23 15:38:31] Conexión a base de datos de prueba establecida
+[2025-05-23 15:38:31] === Iniciando suite de pruebas ===
+[2025-05-23 15:38:31] 
+=== Ejecutando pruebas de base de datos ===
+[2025-05-23 15:38:31] Iniciando pruebas de base de datos
+[2025-05-23 15:38:31] Conexión a base de datos exitosa
+[2025-05-23 15:38:31] Query productos: 2 registros en 0.0023369789123535 segundos
+[2025-05-23 15:38:31] Query pedidos: 9 registros en 0.0024168491363525 segundos
+[2025-05-23 15:38:31] Query resenas: 3 registros en 0.0027229785919189 segundos
+[2025-05-23 15:38:31] Transacción completada exitosamente
+[2025-05-23 15:38:31] 
+=== Ejecutando pruebas de seguridad ===
+[2025-05-23 15:38:31] Iniciando pruebas de seguridad
+[2025-05-23 15:38:31] Vulnerabilidad SQL encontrada en login: ' OR '1'='1
+[2025-05-23 15:38:31] Vulnerabilidad SQL encontrada en login: '; DROP TABLE usuarios; --
+[2025-05-23 15:38:31] Vulnerabilidad SQL encontrada en login: ' UNION SELECT * FROM usuarios; --
+[2025-05-23 15:38:31] Vulnerabilidad SQL encontrada en busqueda: ' OR '1'='1
+[2025-05-23 15:38:31] Vulnerabilidad SQL encontrada en busqueda: '; DROP TABLE productos; --
+[2025-05-23 15:38:31] Vulnerabilidad SQL encontrada en busqueda: ' UNION SELECT * FROM productos; --
+[2025-05-23 15:38:31] Prueba XSS segura en comentario: <script>alert('XSS')</script>
+[2025-05-23 15:38:31] Prueba XSS segura en comentario: <img src='x' onerror='alert(1)'>
+[2025-05-23 15:38:31] Posible vulnerabilidad XSS en comentario: javascript:alert(1)
+[2025-05-23 15:38:31] Prueba XSS segura en nombre: <script>alert('XSS')</script>
+[2025-05-23 15:38:31] Prueba XSS segura en nombre: <img src='x' onerror='alert(1)'>
+[2025-05-23 15:38:31] Posible vulnerabilidad XSS en nombre: javascript:alert(1)
+[2025-05-23 15:38:31] Configuración de sesión insegura: session.cookie_httponly =  (debería ser 1)
+[2025-05-23 15:38:31] Configuración de sesión segura: session.use_only_cookies
+[2025-05-23 15:38:31] Configuración de sesión insegura: session.cookie_secure = 0 (debería ser 1)
+[2025-05-23 15:38:31] Reporte generado en: C:\xampp\htdocs\vino\tests/logs/report_2025-05-23_15-38-31.txt
+[2025-05-23 15:38:31] === Suite de pruebas completada ===

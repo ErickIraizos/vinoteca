@@ -1,0 +1,13 @@
+=== Reporte de Pruebas ===
+Fecha: 2025-05-23 15:38:31
+
+=== database ===
+connection: PASÓ
+performance: FALLÓ
+transactions: PASÓ
+
+=== security ===
+sql_injection: FALLÓ
+xss: PASÓ
+session: FALLÓ
+

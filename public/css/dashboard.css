@@ -1,0 +1,134 @@
+/* Estilos específicos del Dashboard */
+:root {
+    --sidebar-width: 250px;
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --text-light: #ecf0f1;
+    --brown-color: #8B4513;
+}
+
+/* Layout principal */
+.admin-content {
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    transition: margin-left .3s ease-in-out;
+}
+
+/* Tarjetas de estadísticas */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.icon-shape {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+/* Colores de las tarjetas */
+.bg-brown {
+    background-color: var(--brown-color);
+}
+
+/* Tablas */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+.table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+/* Lista de productos populares */
+.list-group-item {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+    
+    .row {
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+    }
+    
+    .col-xl-3, .col-sm-6 {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+/* Mejoras visuales */
+h1.h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Animaciones */
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+/* Utilidades adicionales */
+.py-4 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.g-4 {
+    gap: 1.5rem !important;
+} 
